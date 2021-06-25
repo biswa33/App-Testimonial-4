@@ -1,0 +1,116 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*  { box-sizing: border-box; }
+:root{
+  --primary-color:     #F6921E;
+  --secondary-color:   #652D90;
+  --light-color :      #A7B1B7;
+  --dark-color:        #231F20;
+  --extra-light:       #ccc8c4;
+
+  --base-color:        #ffffff;
+  --black_color:       #000000;
+  --gray-color:        #999999;
+  --offwhite       :   #f6f6f6;
+  --section_bg:        #f4f4f4;
+  --border_color:      #edeff2;
+  --title-color    :   #2a2a2a;
+
+  --font_1 :'Montserrat', sans-serif;   /* //Heading */
+}
+
+body{
+	margin:0;
+	padding: 0;
+	color: var(--dark-color);
+	font-size: 1rem;
+	font-family: var(--font_1);
+}
+
+.container { padding: 60px 0; width: 80%; margin:0 auto; }
+
+.pt-testimonial-sec-rating::before, .pt-testimonial-sec-rating::after {
+  content: '';
+  display: inline-block;
+  height: 1.4px;
+  vertical-align: text-top;
+  background: var(--primary-color);
+  width: calc(50% - 140px);
+  /* 
+    width: calc(50% - 136px);
+    width: 20%;
+    vertical-align: middle; 
+    width: calc(1200px - 30%); 
+    width: calc(50% - 136px);
+  */
+}
+
+.pt-rating-svg {
+  height: 30px;
+  width: 30px;
+  fill: var(--secondary-color);
+  margin: 0 4px;
+}
+
+.pt-testimonial-sec-rating { text-align: center; }
+.pt-testimonial-sec-rating-group { display: inline-block; margin: 0 28px; }
+
+.pt-testimonial-description { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 42px;
+  line-height: 1.5;
+}
+
+.pt-testimonial-description-p {
+  text-align: center;
+  padding: 0 30px;
+}
+
+.inverted-comma:first-child { transform: rotate(180deg); }
+.inverted-comma {
+  /* height: 40px;
+  width: 40px; */
+  height: auto;
+  width: 220px;
+  fill: var(--base-color);
+}
+
+.inverted-comma g {
+  stroke: var(--light-color);
+  stroke-width: 4;
+}
+
+.pt-testimonial-title {
+  text-align: center;
+}
+
+.pt-testimonial-title-name {
+  font-weight: 600;
+  margin: 0;
+}
+
+.pt-testimonial-title-company {
+  margin: 5px 0;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .pt-rating-svg {
+    margin: 0 4px;
+  }
+  .pt-rating-svg {
+    height: 20px;
+    width: 20px;
+  }
+  /* .inverted-comma { width: 180px; } */
+
+  .pt-testimonial-description {
+    margin: 20px 0px;
+  }
+
+  .pt-testimonial-description-p {
+    padding: 0 10px;
+  }
+}
